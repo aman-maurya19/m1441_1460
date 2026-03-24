@@ -4,6 +4,7 @@ import selenium
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
+from selenium.common.exceptions import WebDriverException
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from bs4 import BeautifulSoup
@@ -8922,10 +8923,9 @@ def parse_articles_section(driver,URLS):
 def parse_faq_scholarships_section(driver, URLS):
     try:
         driver.get(URLS["scholarships"])
-    except selenium.common.exceptions.InvalidSessionIdException:
-        driver = webdriver.Chrome(options=options)
-        driver.get(URLS["scholarships"]) 
-    wait = WebDriverWait(driver, 15)
+    except WebDriverException:
+        pass
+
 
     college_info = {
         "college_name": None,
