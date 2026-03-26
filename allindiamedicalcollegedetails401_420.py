@@ -16,26 +16,23 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/college/chaurashiya-pairamedical-institute-rewa-196549",
-  "https://www.shiksha.com/college/rvs-college-of-physiotherapy-coimbatore-7699",
-  "https://www.shiksha.com/college/sri-sathya-sai-institute-of-higher-learning-anantapur-21288",
-  "https://www.shiksha.com/college/scms-school-of-technology-and-management-sstm-admissions-2025-courses-fees-placements-kochi-24894",
-  "https://www.shiksha.com/college/jiet-group-of-institutions-jodhpur-36424",
-  "https://www.shiksha.com/college/st-bede-s-college-shimla-56059",
-  "https://www.shiksha.com/college/sree-dattha-institute-of-pharmacy-ranga-reddy-61195",
-  "https://www.shiksha.com/college/nootan-homoeopathy-medical-college-and-hospital-sangli-70127",
-  "https://www.shiksha.com/college/smt-tarawati-institute-of-bio-medical-and-allied-sciences-roorkee-87807",
-  "https://www.shiksha.com/college/rainbow-children-s-hospital-and-birthright-secunderabad-105923",
-  "https://www.shiksha.com/university/dr-k-n-modi-university-rajasthan-other-33260",
-  "https://www.shiksha.com/college/school-of-distance-education-bharati-vidyapeeth-university-proactive-education-kothrud-kothrud-pune-47863",
-  "https://www.shiksha.com/college/acharya-harihar-regional-cancer-centre-cuttack-70017",
-  "https://www.shiksha.com/college/hitkarini-college-of-pharmacy-jabalpur-230064",
-  "https://www.shiksha.com/college/government-medical-college-bhandara-231200",
-  "https://www.shiksha.com/college/maharishi-chyawan-medical-college-koriawas-narnaul-244472",
-  "https://www.shiksha.com/university/odisha-state-open-university-sambalpur-58777",
-  "https://www.shiksha.com/college/t-m-a-e-s-ayurvedic-medical-college-hospet-87283",
-  "https://www.shiksha.com/college/shivam-pharmaceutical-studies-and-research-center-anand-87637",
-  "https://www.shiksha.com/college/deen-dayal-rustagi-college-of-pharmacy-gurgaon-88553",
+  "https://www.shiksha.com/college/indraprastha-institute-of-management-and-technology-saharanpur-59841",
+  "https://www.shiksha.com/college/emmanual-college-of-pharmacy-visakhapatnam-60773",
+  "https://www.shiksha.com/college/universal-institute-of-pharmacy-bareilly-65405",
+  "https://www.shiksha.com/college/ryan-college-for-higher-education-hanumangarh-74813",
+  "https://www.shiksha.com/college/mohsin-e-millat-unani-medical-college-and-hospital-raipur-87203",
+  "https://www.shiksha.com/college/rk-group-of-institutions-bangalore-207781",
+  "https://www.shiksha.com/college/thakur-college-of-pharmacy-bidar-207987",
+  "https://www.shiksha.com/college/aarihant-homoeopathic-medical-college-and-research-institute-gandhinagar-214795",
+  "https://www.shiksha.com/provider/aapc-225751",
+  "https://www.shiksha.com/provider/emeritus-226679",
+  "https://www.shiksha.com/college/rajvanshi-ramashish-college-of-pharmacy-hajipur-236344",
+  "https://www.shiksha.com/college/shree-mata-vaishno-devi-narayana-superspeciality-hospital-reasi-240874",
+  "https://www.shiksha.com/college/sparsh-hospital-bangalore-241916",
+  "https://www.shiksha.com/college/school-of-nursing-ruby-general-hospital-college-kasba-kolkata-54340",
+  "https://www.shiksha.com/college/saraswathi-college-of-pharmacy-ghaziabad-65493",
+  "https://www.shiksha.com/college/gajraj-singh-yadav-karanpal-singh-yadav-college-of-pharmacy-uttar-pradesh-other-65687",
+  "https://www.shiksha.com/college/brd-group-of-institutions-roorkee-70883",
 ]
 
 
@@ -9249,7 +9246,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count = 1221
+    c_count = 3344
 
     try:
         for base_url in BASE_URL:
